@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
       }
       /* Resultado*/
       result.classList.remove('hide');
-      result.innerHTML = 'La palabra encriptada es : ' + output ;
+      result.innerHTML = 'El texto encriptado es : ' + output ;
     } else {
       alert('Ingres una palabra');
     }
@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
       output += code2;
     };
     /* resultado*/
-    result.innerHTML = 'La palabra desencriptada es : ' + output ;
+    result.innerHTML = 'El texto desencriptado es : ' + output ;
   });
   /* función para limpiar la entrada*/
   let eraser = document.getElementById('clearbutton');
