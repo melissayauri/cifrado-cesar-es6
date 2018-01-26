@@ -4,13 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio del cifrado cesar</title>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <section>
-      <input type="text" class="form-control palabra" id="palabra">
-      <button class="btn btn-default btn-lg btn-block encriptar" id="encriptar">Encriptar</button>
-    <button class="btn btn-default btn-lg btn-block desencriptar" id="desencriptar">Desencriptar</button>
-    <button id="clearbutton"> Limpiar Focus</button>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class=" center-block  contain">
+              <h1>Cifrado César</h1>
+              <input type="text" class="form-control center-block " id="palabra">
+              <div class="col-md-12 marg">
+              <button class="btn btn-default  " id="encriptar">Encriptar</button>
+              <button class="btn btn-default" id="desencriptar">Desencriptar</button>
+              <button class="btn btn-default" id="clearbutton"> Limpiar Focus</button>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
     <p id="resultado" class="resultado"></p>
     </section>
     <script src="vendors/js/jquery-3.2.1.min.js"></script>
