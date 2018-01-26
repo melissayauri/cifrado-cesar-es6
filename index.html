@@ -5,35 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio del cifrado cesar</title>
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <section>
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <div class="row">
-          <div class="col-md-12">
-            <div class=" center-block  contain">
-              <h1>Cifrado César</h1>
-              <input type="text" class="form-control center-block " id="palabra">
-              <div class="col-md-12 marg">
-              <button class="btn btn-default  " id="encriptar">Encriptar</button>
-              <button class="btn btn-default" id="desencriptar">Desencriptar</button>
-              <button class="btn btn-default" id="clearbutton"> Limpiar Focus</button>
-                </div>
-
+          <div class="col-md-6 col-md-offset-3">
+            <div class="center-block contain">
+              <h1 class="text-center title">Cifrado César</h1>
+              <!--entrada-->
+              <input type="text" class="form-control center-block input-word" id="input" placeholder="Ingresa la palabra que desees">
+              <!--Botones-->
+              <div class="col-md-12 col-xs-9 marg">
+                <button class="btn btn-default" id="cipher">Encriptar</button>
+                <button class="btn btn-default " id="clearbutton"> Limpiar</button>
+                <button class="btn btn-default " id="decipher">Desencriptar</button>
+              </div>
+              <!--resultado-->
+              <p id="result" class="result hide"></p>
             </div>
-
           </div>
         </div>
       </div>
-
-
-    <p id="resultado" class="resultado"></p>
     </section>
     <script src="vendors/js/jquery-3.2.1.min.js"></script>
-  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/app.js">
-
-  </script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
